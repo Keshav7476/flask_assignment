@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Data Page</title>
+    
+</head>
+<body>
+    <h1>Data Page</h1>
+    <h2>Stored Items</h2>
+    <ul id="itemsList">
+        
+    </ul>
+
+    <h2>Add a New Item</h2>
+    <form id="itemForm">
+        <input type="text" id="itemInput" placeholder="Enter item" required>
+        <button type="submit">Add Item</button>
+    </form>
+
+    <p id="message"></p> <!--returns confirmation that item is added-->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

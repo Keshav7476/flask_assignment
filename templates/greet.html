@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Page</title>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h2>Enter your name:</h2>
+    <input type="text" id="nameInput" placeholder="Type your name">
+    <button onclick="fetchGreeting()">Enter</button>
+    <p id="greeting"></p>
+</body>
+</html>
